@@ -1,0 +1,29 @@
+﻿@model IEnumerable<FoodStore.ViewModels.BestSellersViewModel>
+@{
+    ViewBag.Title = "Food Store Home Page";
+}
+
+<div class="jumbotron">
+    <center>
+        <h1>Welcome to your Food Store!</h1>
+        <h2>"Our best selling products"</h2>
+    </center>
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-md-3">
+                @if (item.ProductImage != null)
+                {
+                    <a href="@Url.Action("Details", "Products", new { id = item.Product.ID })">
+                        <img src="@(Url.Content(Constants.ProductImagePath) + item.ProductImage)" />
+                    </a>
+                }
+                <p>@Html.ActionLink(item.Product.Name, "Details", "Products", new { id = item.Product.ID }, new { @class = "large-bold-text" })</p>
+            </div>
+        }
+    </div>
+    <p>
+        @Html.ActionLink("Shop Now", "Index", "Products", null, new { @class = "btn btn-lg btn-primary" })
+    </p>
+</div>
+

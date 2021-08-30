@@ -1,0 +1,817 @@
+﻿body {
+    background-color: paleturquoise;
+    max-width: 1024px;
+    margin: 0 auto;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(14, 117, 204);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+html {
+    animation: fadeIn 2s; /* Safari, Chrome and Opera > 12.1 */
+    -webkit-animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+    -ms-animation: fadein 2s; /* Internet Explorer */
+    -o-animation: fadein 2s; /* Opera < 12.1 */
+}
+
+footer {
+    margin-bottom: 20px;
+    background-color: deepskyblue;
+    color: white;
+    height: 30px;
+    line-height: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+h1, h2 {
+    color: hotpink;
+    font-size:3em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/*Images appear horizontally*/
+/*.col-md-3 {
+    float: left;
+    width: 25%;
+}*/
+
+/*Micro Clearfix by Nicholas Gallagher*/
+.row:after, .form-group:after, .navbar:after {
+    /*pseudo-classes*/
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+/*Image borders*/
+img {
+    border: 3px solid deepskyblue;
+    border-radius: 3px;
+}
+
+/*Basic Link Styling*/
+.large-bold-text {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+a, a:visited {
+    color: rgb(14, 117, 204);
+    text-decoration: none;
+}
+
+a:hover {
+    color: hotpink;
+    text-decoration: underline;
+}
+
+/*Styling Buttons*/
+/*Styling Hyperlinks to look like a Button*/
+    a.btn-primary, .btn-default, .btn-primary {
+        background-color: steelblue;
+    }
+
+        a.btn-primary:hover, .btn-default:hover, .btn-primary:hover {
+            background-color: green;
+        }
+    a.btn-lg {
+        padding: 10px 16px;
+        font-size: 1.5em;
+    } 
+
+    .jumbotron { margin-bottom: 20px; }
+
+a.btn, .btn {
+    border-radius: 5px;
+    color: #ffffff;
+    text-decoration: none;
+    border: 2px outset buttonface;
+    white-space: nowrap;
+} hr {
+    display:none;
+}/*Add space between Table Cells*/td { 
+    padding: 5px;
+    vertical-align: top;
+}.large-text { font-size: 1.5em; }/*Add Vertical Space using Margins*/.form-group{ margin-bottom: 10px; }/*Adding Grid Layout*/
+.col-md-1 {
+    width: 8.333333333333332%;
+}
+
+.col-md-2 {
+    width: 16.666666666666664%;
+}
+
+.col-md-3 {
+    width: 25%;
+}
+
+.col-md-4 {
+    width: 33.33333333333333%;
+}
+
+.col-md-5 {
+    width: 41.66666666666667%;
+}
+.col-md-6 {
+    width: 50%;
+}
+
+.col-md-7 {
+    width: 58.333333333333336%;
+}
+
+.col-md-8 {
+    width: 66.66666666666666%;
+}
+
+.col-md-9 {
+    width: 75%;
+}
+
+.col-md-10 {
+    width: 75%;
+}
+
+.col-md-11 {
+    width: 91.66666666666666%;
+}
+
+.col-md-12 {
+    width: 100%;
+} 
+
+/*Column Floated to the left*/
+.col-md-1,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-md-10,
+.col-md-11 {
+    float: left;
+    padding-right: 5px;
+}
+
+/*Styling Labels n TextBoxes*/
+label {
+    font-weight: bold;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.form-control {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 3px;
+    border: solid deepskyblue;
+    color: rgb(14, 117, 204);
+    display: block; /*Changing flow of the page*/
+}
+
+/*Adding Blank Columns using margins*/
+.col-md-offset-2 {
+    margin-left: 16.666666666666664%;
+} 
+
+/*More offset styles*/
+.col-md-offset-0 {
+    margin-left: 0;
+}
+
+.col-md-offset-1 {
+    margin-left: 8.333333333333332%;
+}
+
+.col-md-offset-2 {
+    margin-left: 16.666666666666664%;
+}
+
+.col-md-offset-3 {
+    margin-left: 25%;
+}
+
+.col-md-offset-4 {
+    margin-left: 33.33333333333333%;
+}
+
+.col-md-offset-5 {
+    margin-left: 41.66666666666667%;
+}
+
+.col-md-offset-6 {
+    margin-left: 50%;
+}
+
+.col-md-offset-7 {
+    margin-left: 58.333333333333336%;
+}
+
+.col-md-offset-8 {
+    margin-left: 66.66666666666666%;
+}
+
+.col-md-offset-9 {
+    margin-left: 75%;
+}
+
+.col-md-offset-10 {
+    margin-left: 83.33333333333334%;
+}
+
+.col-md-offset-11 {
+    margin-left: 91.66666666666666%;
+} 
+
+/*Styling the Cursor*/
+input[type=submit]:hover {
+    cursor: pointer;
+}
+
+/*Styling Error Messages*/
+.text-danger {
+    color: red;
+    font-weight: bold;
+}
+
+/*Force Elements to be Same Font size/weight*/
+input, textarea, select, button {
+    font-family: inherit;
+    font-size:inherit;
+}
+
+/*Aligning Text*/
+.control-label {
+    text-align: right;
+}
+
+/*Vertically Align*/
+h4{
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+input[type=checkbox] {
+    vertical-align: middle;
+}
+
+/*Styling Definition Lists*/
+dl {
+    width: 100%;
+    overflow: hidden;
+}
+
+dt {
+    float: left;
+    /*adjust the width; make sure the total of both is 100%*/
+    width: 50%;
+    /*clear left ensure that if there is an empty dd then the elements do not wrap*/
+    clear: left; /*ensures that dt appear on a new line*/
+    font-weight: bold;
+}
+
+dd {
+    float: left;
+    /*adjust the width; make sure the total of both is 100%*/
+    width: 50%;
+}
+
+dt, dd { line-height: 20px; }
+
+/*Styling Tables*/
+table { 
+    width: 100%; 
+    margin-bottom: 5px;
+}
+
+th {
+    font-weight: bold;
+    text-align:left;
+    padding: 5px;
+    border-bottom: 1px solid;
+}
+
+/*Underline any Links*/
+.orders-table td {
+    border-bottom: 1px solid;
+}
+
+.orders-table a {
+    text-decoration: underline;
+}
+
+/*Styling Paging Links*/
+.pagination {
+    margin: 20px 0; /*Add white-spaces above n below pg links*/
+}
+
+/*Make elements of list appear side by side in a row*/
+.pagination li {
+    display: inline;
+    margin-right: 2px;
+}
+
+/*Padding to make them appear squarer*/
+.pagination li a {
+    padding: 6px 12px;
+    border: 3px solid deepskyblue;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+/*Indicate active page*/
+.active a {
+    background-color: deepskyblue;
+    color:#ffffff;
+    text-decoration:none;
+}
+
+/*Sibling Selector combined with child selector*/
+/*Style h2 for Create New links*/
+h2 + a {
+    font-size: 1.5em;
+    font-weight:bold;
+}
+
+/*Style p tag n H2*/
+h2 + a, h2 + p > a {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/*Styling Navigation Bar*/
+.navbar {
+    background-color:deepskyblue;
+    border-radius: 5px;
+    margin-top:110px;
+    margin-bottom: 10px;
+    padding: 0px 5px;
+}
+
+/*Transform Nav Bar to display Horizontally*/
+.navbar-header {
+    float:left;
+    padding: 5px;
+    position:relative;
+}
+.nav{
+    float:left;
+}
+.navbar-left {
+    float: left;
+}
+
+/*make links white*/
+.navbar a {
+    color: white;
+}
+
+/*Lay out list elements horizontally*/
+.nav li, .navbar-form .form-group {
+    display:inline-block;
+}
+
+/*space out list elements*/
+.nav li {
+    padding: 5px;
+}
+
+/*dont display button with class toggle*/
+.navbar-toggle {
+    display:none;
+}
+
+/*Moving elements using positioning*/
+/*Parent n Child element*/
+/*Move search box n button up n out the navbar*/
+.navbar-collapse {
+    position: relative;
+}
+
+.navbar-form {
+    position: absolute;
+    bottom: 40px;
+    left: 30%;
+}
+/*:)*/
+
+/*Make searchbox n button larger*/
+.navbar .form-control {
+    padding: 5px;
+    width:250px;
+}
+.navbar-form button {
+    padding: 5px 20px;
+    font-size: 1.2em;
+}
+
+/*Reposition navbar-brand link*/
+a.navbar-brand {
+    color: hotpink;
+    position:absolute;
+    bottom:10px;
+    font-size: 2.5em; /*styling text*/
+    font-weight:bold;
+    text-decoration:none;/*remove underline*/
+    text-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+    height: 110px;
+    width: 250px;
+    letter-spacing: 1px;
+    /*Backdrop IMG in CSS*/
+    background-image: url(dog.png);
+    background-repeat: no-repeat;
+    background-position:right;
+}
+
+/*Styling letters and Lines of Text*/
+a.navbar-brand:first-line{
+    color: deepskyblue;
+    font-size: 1.8em;
+}
+
+/*Float elements to the right*/
+.navbar-right {
+    float:right;
+}
+
+/*Animation to Links using Scaling*/
+/*Changes links displayed to be rounded n shiny top edge*/
+.nav li a {
+    display: inline-block;
+    background-color: rgb(14, 117, 204);
+    border-radius: 2px;
+    padding: 5px 10px;
+    border: 1px solid rgb(14, 117, 204);
+    max-width: 250px;
+    -moz-box-shadow: inset 0px 1px 0px rgba(255,255,255,0.7);
+    -webkit-box-shadow: inset 0px 1px 0px rgba(255,255,255,0.7);
+    box-shadow: inset 0px 1px 0px rgba(255,255,255,0.7);
+    -webkit-transition: ease-in .25s;
+    transition: ease-in .25s;
+}
+
+/*Animation for hover*/
+.nav li a:hover {
+    background-color: hotpink;
+    border:1px solid hotpink;
+    transform:scale(1.1);/*scale up by 10%*/
+    text-decoration:none;
+}
+
+/*MAKE HOME PAGE Responsive*/
+/*Fix page images squashed*/
+/*To Appear with column layout*/ /*Or Use Flexbox*/
+
+/*Fix images being studk on left edge*/
+.body-content {
+    margin: 0 10px;
+}
+
+@media (min-width:900px) {
+    .col-md-1 {
+        width: 8.333333333333332%;
+    }
+
+    .col-md-2 {
+        width: 16.666666666666664%;
+    }
+
+    .col-md-3 {
+        width: 25%;
+    }
+
+    .col-md-4 {
+        width: 33.33333333333333%;
+    }
+
+    .col-md-5 {
+        width: 41.66666666666667%;
+    }
+
+    .col-md-6 {
+        width: 50%;
+    }
+
+    .col-md-7 {
+        width: 58.333333333333336%;
+    }
+
+    .col-md-8 {
+        width: 66.66666666666666%;
+    }
+
+    .col-md-9 {
+        width: 75%;
+    }
+
+    .col-md-10 {
+        width: 75%;
+    }
+
+    .col-md-11 {
+        width: 91.66666666666666%;
+    }
+
+    .col-md-12 {
+        width: 100%;
+    }
+
+    .col-md-1,
+    .col-md-2,
+    .col-md-3,
+    .col-md-4,
+    .col-md-5,
+    .col-md-6,
+    .col-md-7,
+    .col-md-8,
+    .col-md-9,
+    .col-md-10,
+    .col-md-11 {
+        float: left;
+        padding-right: 5px;
+    }
+
+    .col-md-offset-0 {
+        margin-left: 0;
+    }
+
+    .col-md-offset-1 {
+        margin-left: 8.333333333333332%;
+    }
+
+    .col-md-offset-2 {
+        margin-left: 16.666666666666664%;
+    }
+
+    .col-md-offset-3 {
+        margin-left: 25%;
+    }
+
+    .col-md-offset-4 {
+        margin-left: 33.33333333333333%;
+    }
+
+    .col-md-offset-5 {
+        margin-left: 41.66666666666667%;
+    }
+
+    .col-md-offset-6 {
+        margin-left: 50%;
+    }
+
+    .col-md-offset-7 {
+        margin-left: 58.333333333333336%;
+    }
+
+    .col-md-offset-8 {
+        margin-left: 66.66666666666666%;
+    }
+
+    .col-md-offset-9 {
+        margin-left: 75%;
+    }
+
+    .col-md-offset-10 {
+        margin-left: 83.33333333333334%;
+    }
+
+    .col-md-offset-11 {
+        margin-left: 91.66666666666666%;
+    }
+
+    /*Style NavBar for Mobile*/
+    .nav {
+        float: left;
+    }
+
+    .navbar-left {
+        float: left;
+    }
+
+    .nav li, .navbar-form .form-group {
+        display: inline-block;
+    }
+
+    .nav li {
+        padding: 5px;
+    }
+
+    .navbar-collapse {
+        position: relative;
+    }
+
+    .navbar-form {
+        position: absolute;
+        bottom: 40px;
+        left: 30%;
+    }
+
+    .navbar .form-control {
+        padding: 5px;
+        width: 250px;
+    }
+
+    .navbar-form button {
+        padding: 5px 20px;
+        font-size: 1.2em;
+    }
+
+    .navbar-right {
+        float: right;
+    }
+
+    .nav li a {
+        display: inline-block;
+        background-color: rgb(14, 117, 204);
+        border-radius: 2px;
+        padding: 5px 10px;
+        border: 1px solid rgb(14, 117, 204);
+        max-width: 210px;
+        -moz-box-shadow: inset 0px 1px 0px rgba(255,255,255,0.7);
+        -webkit-box-shadow: inset 0px 1px 0px rgba(255,255,255,0.7);
+        box-shadow: inset 0px 1px 0px rgba(255,255,255,0.7);
+        -webkit-transition: ease-in .25s;
+        transition: ease-in .25s;
+    }
+
+        .nav li a:hover {
+            background-color: hotpink;
+            border: 1px solid hotpink;
+            transform: scale(1.1);
+            text-decoration: none;
+        }
+} 
+
+/*Fix overlap shop Now button*/
+@media (max-width: 899px) {
+    div {
+        margin-bottom:20px;
+    }
+
+    /*Manipulate Table n display vertically*/
+    td {
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+    }
+
+    th {
+        display: none;
+    }
+
+    tbody td:before {
+        content: attr(data-th);
+        display: block;
+        font-weight: bold;
+    }
+
+    /*Show/Hide Navbar*/
+    .navbar-header:after {
+        content: "Menu";
+    }
+
+    .navbar {
+        color: white;
+    }
+
+    a.navbar-brand {
+        bottom: 22px;
+    }
+
+    /*clearfix*/
+    .navbar-collapse:before {
+        content: " ";
+        display: table;
+        clear: both;
+    }
+
+    /*hide from menu*/
+    .navbar-collapse {
+        display: none;
+        font-size: 1.2em;
+    }
+
+    .navbar:hover .navbar-collapse {
+        display: block;
+    }
+
+    /*Float columns of Basket*/
+    .floated-cols .col-md-1 {
+        width: 8.333333333333332%;
+    }
+
+    .floated-cols .col-md-2 {
+        width: 16.666666666666664%;
+    }
+
+    .floated-cols .col-md-3 {
+        width: 25%;
+    }
+
+    .floated-cols .col-md-4 {
+        width: 33.33333333333333%;
+    }
+
+    .floated-cols .col-md-5 {
+        width: 41.66666666666667%;
+    }
+
+    .floated-cols .col-md-6 {
+        width: 50%;
+    }
+
+    .floated-cols .col-md-7 {
+        width: 58.333333333333336%;
+    }
+
+    .floated-cols .col-md-8 {
+        width: 66.66666666666666%;
+    }
+
+    .floated-cols .col-md-9 {
+        width: 75%;
+    }
+
+    .floated-cols .col-md-10 {
+        width: 83.33333333333334%;
+    }
+
+    .floated-cols .col-md-11 {
+        width: 91.66666666666666%;
+    }
+
+    .floated-cols .col-md-12 {
+        width: 100%;
+    }
+
+    .floated-cols .col-md-1,
+    .floated-cols .col-md-2,
+    .floated-cols .col-md-3,
+    .floated-cols .col-md-4,
+    .floated-cols .col-md-5,
+    .floated-cols .col-md-6,
+    .floated-cols .col-md-7,
+    .floated-cols .col-md-8,
+    .floated-cols .col-md-9,
+    .floated-cols .col-md-10,
+    .floated-cols .col-md-11 {
+        float: left;
+        padding-right: 5px;
+    }
+}
+
+
